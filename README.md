@@ -20,12 +20,10 @@ smoke-test-job:
 include:
   - local: local-smoke-tests.gitlab-ci.yml
 #  - remote: https://github.com/Valinetsky/-CI-CD_Seminar04/blob/main/remote-included-file.yml
-# К сожалению, ни собственные файлы в моих репозиториях, ни ссылка на гитхаб не сработали
-# Поэтому взял ссылку у Максима Бобкова:
   - remote: https://gitlab.com/ci-cd7655047/5/-/raw/main/remote-included-file.yml
 ```
 
-Файл с аналогичным содержанием, что и у Максима, есть в этом репозитории: `remote_included-file.yml`
+Файл с аналогичным содержанием есть в этом репозитории: `remote_included-file.yml`
 
 
 
@@ -37,9 +35,3 @@ Remote included file job
 
 Pipeline passed
 ![pipeline passed](img/VirtualBox_cibox_04_12_2023_19_10_34.png "pipeline passed")
-
-## Благодарность
-Спасибо Максиму Бобкову, без его кода pipeline не взлетал. Ссылка на гитхаб [тут](https://github.com/biramax/ "https://github.com/biramax/").
-
-## Заключение
-Курс дался не просто! От проблем с регистрацией, до работы с отдельностоящими удаленными репозиториями. Хотя, казалось бы `include` — стандартная копия импорта в языках программирования. Однако, задачи решены, а больше опыта можно взять на практических задачах. Ура!
